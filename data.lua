@@ -901,9 +901,8 @@ end
 data:extend({
     {
         type = "custom-input",
-        name = "my-custom-input",
-        key_sequence = "CONTROL + C", -- Change this to your desired key sequence
-        consuming = "none",
+        name = "caravan-organizer",
+        key_sequence = "CONTROL + C",
     }
 })
 
