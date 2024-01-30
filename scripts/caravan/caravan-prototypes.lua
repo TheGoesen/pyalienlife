@@ -139,6 +139,10 @@ local function get_outpost_inventory(outpost)
 	end
 end
 
+Caravan.get_inventory= function(outpost)
+	return get_outpost_inventory(outpost)
+end
+
 local function transfer_all_items(input_inventory, output_inventory)
 	if input_inventory.is_empty() or output_inventory.is_full() then return end
 	for item, count in pairs(input_inventory.get_contents()) do
